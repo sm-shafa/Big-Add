@@ -42,6 +42,12 @@ namespace BigAdd
     }
     public class AddBig
     {
+        /// <summary>
+        /// sum two big number
+        /// </summary>
+        /// <param name="num1">number1</param>
+        /// <param name="num2">number2</param>
+        /// <returns></returns>
         public string Add(string num1, string num2)
         {
             int max = 0;    // the maximum of input 
@@ -126,6 +132,11 @@ namespace BigAdd
                 holder[row, j--] = charArr[i];
         }
 
+        /// <summary>
+        /// this method Sum multi string via Recursion 
+        /// </summary>
+        /// <param name="input">a list of string numnber</param>
+        /// <returns>sum of a list of number</returns>
         public string MultiAdd(List<string> input)
         {
             string temp = "";
@@ -138,8 +149,6 @@ namespace BigAdd
             }
 
             return temp;
-
-
         }
     }
 }
